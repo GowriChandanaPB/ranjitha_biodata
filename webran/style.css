@@ -1,0 +1,107 @@
+Style.css
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&disp
+lay=swap');
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(135deg, #74ebd5, #acb6e5);
+color: #333;
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+}
+.glass-header {
+text-align: center;
+margin-top: 25px;
+background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(12px);
+border-radius: 20px;
+padding: 25px 40px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+color: #fff;
+animation: fadeInDown 1s ease-in-out;
+}
+.glass-header h1 {
+font-size: 36px;
+color: #fff;
+margin-bottom: 8px;
+letter-spacing: 1px;
+}
+.subtitle {
+font-size: 16px;
+color: #f0f0f0;
+margin-bottom: 12px;
+}
+nav a {
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+padding: 8px 18px;
+border-radius: 10px;
+margin: 0 6px;
+transition: all 0.3s ease;
+background: rgba(255, 255, 255, 0.15);
+}
+nav a:hover {
+background: #fff;
+color: #6a11cb;
+}
+nav a.active {
+background: #6a11cb;
+color: #fff;
+}
+.bio-card {
+background: rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(20px);
+border-radius: 20px;
+padding: 40px;
+margin-top: 40px;
+width: 90%;
+max-width: 700px;
+color: #fff;
+box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+animation: fadeIn 1.2s ease-in-out;
+}
+.bio-card h2 {
+color: #fff;
+border-bottom: 2px solid #fff;
+padding-bottom: 5px;
+margin-bottom: 15px;
+}
+.bio-card p, 
+.bio-card li {
+font-size: 16px;
+line-height: 1.6;
+}
+ul {
+list-style-type: square;
+padding-left: 25px;
+margin-bottom: 20px;
+}
+.glass-footer {
+text-align: center;
+background: rgba(255, 255, 255, 0.25);
+color: #fff;
+padding: 15px 0;
+width: 100%;
+margin-top: auto;
+backdrop-filter: blur(8px);
+border-radius: 20px 20px 0 0;
+box-shadow: 0 -5px 30px rgba(0,0,0,0.1);
+animation: fadeInUp 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(25px); }
+to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
